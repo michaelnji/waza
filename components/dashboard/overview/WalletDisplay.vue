@@ -12,7 +12,7 @@
         </div>
         <div class="flex items-center mt-4 md:mt-0 gap3">
             <Button size="lg"
-                class="px6 py2 shadow-none  font-400 text-xl bg-indigo-500 hover:bg-indigo-600 active:scale-95 transition ease-in">
+                class="px6 py2 shadow-none font-400 text-xl bg-indigo-500 hover:bg-indigo-600 active:scale-95 transition ease-in">
 
                 Add
                 funds
