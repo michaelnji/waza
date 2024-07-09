@@ -60,7 +60,6 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@hypernym/nuxt-anime',
     '@nuxtjs/color-mode',
-    '@dargmuesli/nuxt-cookie-control',
     '@nuxtjs/device',
     'nuxt-headlessui',
     'shadcn-nuxt',
