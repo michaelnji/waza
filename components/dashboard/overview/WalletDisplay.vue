@@ -3,11 +3,11 @@
 </script>
 <template>
     <div
-        class="w-full max-w-xl p-6 dark:border-stone-800 md:pt-6 md:rounded-2xl flex flex-col  md:flex-row md:items-center justify-between bg-stone-100 border dark:bg-stone-900">
+        class="w-full max-w-xl p-6 dark:border-stone-800 md:pt-6 md:rounded-2xl flex flex-col  md:flex-row md:items-center justify-between bg-stone-50 border border-stone-100 dark:bg-stone-900">
         <div>
             <p class="font-medium opacity-50   text-sm">ACCOUNT BALANCE</p>
             <h1 class="font-bold font-display flex  items-center text-5xl ">
-                <span class=" mr-2 text-purple-800  font-body">
+                <span class=" mr-2 text-purple-800 dark:text-purple-400 font-body">
                     <Naira size="lg" />
                 </span>1210
             </h1>

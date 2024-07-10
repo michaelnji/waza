@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import Logo from './Logo.vue';</script>
 <template>
-    <div class="fixed w-full top-0 border-b dark:border-stone-900 left-0 right-0 bg-white dark:bg-stone-950 z-1">
+    <div
+        class="fixed w-full top-0 border-b border-stone-100 dark:border-stone-900 left-0 right-0 bg-white dark:bg-stone-950 z-1">
         <div class="flex wfull justify-between p3 md:hidden">
             <Logo />
             <div class="flex items-center gap-3">

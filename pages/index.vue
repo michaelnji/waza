@@ -32,7 +32,7 @@ useHead({
                         </div>
                     </div>
                 </div>
-                <div class="md:p0 p-3">
+                <div class="">
                     <div class="lg:p-6 p-3 lg:border dark:border-stone-900 rounded-2xl">
                         <div class="flex mb-6 justify-between items-center">
                             <h1 class="font-medium text-xl">Recent Activity</h1>

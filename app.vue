@@ -4,6 +4,8 @@ useHead({
     return titleChunk ? `Waza - ${titleChunk}` : 'Waza';
   }
 })
+const colorMode = useColorMode()
+colorMode.preference = "dark"
 </script>
 
 <template>
