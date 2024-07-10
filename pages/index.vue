@@ -17,12 +17,12 @@ useHead({
 </script>
 
 <template>
-    <div class="xl:max-w-5xl max-w-xl md:mxa !w-full">
+    <div class="xl:max-w-5xl max-w-xl md:mxa ">
         <div class="p-3">
             <Greetings />
         </div>
         <div class="mt-2 w-full ">
-            <div class="grid xl:grid-cols-2 gap-y-6 md:gap-x-24 !w-full">
+            <div class="xl:grid xl:grid-cols-2 space-y-6 xl:space-y-0 xl:gap-y-6 md:gap-x-24 !w-full">
                 <div class="w-full">
                     <WalletDisplay />
                     <div class="lg:mt-12 mt-8 md:p0 p-3">
@@ -31,7 +31,7 @@ useHead({
                             <Shortcuts />
                         </div>
                     </div>
-                    <div class="mt-6 px3 w-[89%] md:w-full">
+                    <div class="mt-8 mb-6 px3 md:px0 ">
                         <Offers />
                     </div>
                 </div>

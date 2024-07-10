@@ -32,13 +32,8 @@ function onKeyDown(event: KeyboardEvent) {
 </script>
 
 <template>
-  <div
-    :class="cn('relative', props.class)"
-    role="region"
-    aria-roledescription="carousel"
-    tabindex="0"
-    @keydown="onKeyDown"
-  >
+  <div :class="cn('relative', props.class)" class="!max-w-full overflow-hidden " role="region"
+    aria-roledescription="carousel" tabindex="0" @keydown="onKeyDown">
     <slot v-bind="carouselArgs" />
   </div>
 </template>
