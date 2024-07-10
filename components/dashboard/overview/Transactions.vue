@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const invoices = [
     {
-        id: 'INV001',
+        id: 'WZ24623',
         paymentStatus: 'success',
         totalAmount: '250.00',
         paymentType: 'Artime',
@@ -9,7 +9,7 @@ const invoices = [
         date: '2024-07-10T09:57:35+0000'
     },
     {
-        id: 'INV002',
+        id: 'WZ43293',
         paymentStatus: 'pending',
         totalAmount: '150.00',
         paymentType: 'DSTV',
@@ -17,7 +17,7 @@ const invoices = [
         date: '2024-07-10T09:57:35+0000'
     },
     {
-        id: 'INV003',
+        id: 'WZ10293',
         paymentStatus: 'failed',
         totalAmount: '350.00',
         paymentType: 'Data',
@@ -26,7 +26,7 @@ const invoices = [
 
     },
     {
-        id: 'INV004',
+        id: 'WZ99078',
         paymentStatus: 'success',
         totalAmount: '450.00',
         paymentType: 'Electricity',
@@ -36,7 +36,7 @@ const invoices = [
     },
 
     {
-        id: 'INV006',
+        id: 'WZ10201',
         paymentStatus: 'pending',
         totalAmount: '2450.00',
         paymentType: 'Cable TV',
@@ -61,7 +61,7 @@ const invoices = [
                 </div>
                 <div>
                     <h2 class="font-medium text-base"> {{ item.paymentType }}</h2>
-                    <span class="text-sm opacity-60 lowercase">{{ item.id }}</span>
+                    <span class="text-xs opacity-60 ">{{ item.id }}</span>
                 </div>
             </div>
             <div class="">

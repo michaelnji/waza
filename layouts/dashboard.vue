@@ -7,7 +7,7 @@ import NavBar from '~/components/NavBar.vue';
         <div class=" md:flex-shrink-0 md:p-6 md:h-screen md:flex md:items-center ">
             <SideBar />
         </div>
-        <main class="md:flex-grow-1 md:p-6 md:pl-13 xl:pl-0">
+        <main class="md:flex-grow-1 md:p-6 md:pl-13 lg:pl-15 ">
             <div class="md:mb-4">
                 <NavBar />
             </div>

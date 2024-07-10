@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 gap-2 wfull">
+    <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-2 gap-2 wfull">
         <div
             class="rounded-xl p3  border dark:border-stone-900 hover:bg-stone-100 dark:hover:bg-stone-900 transition ease-in cursor-pointer flex items-center gap-x-3 active:scale-95">
             <div
