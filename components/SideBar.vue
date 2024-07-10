@@ -39,7 +39,7 @@
                     <div class=" grid gap-y-3">
                         <NuxtLink v-for="item in items" :to="item.route">
                             <div class="p2 rounded-xl justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition ease-in flex items-center "
-                                :class="{ '!bg-purple-300 text-stone-950': route.path === item.route }" v-tooltip.right="{
+                                :class="{ '!bg-amber-300 text-stone-950': route.path === item.route }" v-tooltip.right="{
                                     value: item.label,
                                     showDelay: 700
                                 }">
@@ -54,7 +54,7 @@
             <div class="1mta">
                 <NuxtLink to="/settings">
                     <div class="p2 flex items-center justify-center rounded-xl hover:bg-stone-200 transition ease-in "
-                        :class="{ '!bg-purple-300 text-stone-950': route.path === '/settings' }" v-tooltip.right="{
+                        :class="{ '!bg-amber-300 text-stone-950': route.path === '/settings' }" v-tooltip.right="{
                             value: 'Settings',
                             showDelay: 700
                         }">
@@ -72,7 +72,7 @@
 
                 <NuxtLink v-for="item in items" :to="item.route">
                     <div class="p2 rounded-xl justify-center hover:bg-stone-200 transition ease-in flex items-center "
-                        :class="{ '!bg-purple-300 text-stone-950': route.path === item.route }" v-tooltip.right="{
+                        :class="{ '!bg-amber-300 text-stone-950': route.path === item.route }" v-tooltip.right="{
                             value: item.label,
                             showDelay: 700
                         }">
@@ -83,7 +83,7 @@
                 </NuxtLink>
                 <NuxtLink to="/settings">
                     <div class="p2 flex items-center justify-center rounded-xl hover:bg-stone-200 transition ease-in "
-                        :class="{ '!bg-purple-300 text-stone-950': route.path === '/settings' }" v-tooltip.right="{
+                        :class="{ '!bg-amber-300 text-stone-950': route.path === '/settings' }" v-tooltip.right="{
                             value: 'Settings',
                             showDelay: 700
                         }">

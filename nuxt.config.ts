@@ -5,17 +5,17 @@ const Waza = definePreset(Aura, {
   semantic: {
     colorScheme: {
       primary: {
-        50: '{purple.50}',
-        100: '{purple.100}',
-        200: '{purple.200}',
-        300: '{purple.300}',
-        400: '{purple.400}',
-        500: '{purple.500}',
-        600: '{purple.600}',
-        700: '{purple.700}',
-        800: '{purple.800}',
-        900: '{purple.900}',
-        950: '{purple.950}'
+        50: '{amber.50}',
+        100: '{amber.100}',
+        200: '{amber.200}',
+        300: '{amber.300}',
+        400: '{amber.400}',
+        500: '{amber.500}',
+        600: '{amber.600}',
+        700: '{amber.700}',
+        800: '{amber.800}',
+        900: '{amber.900}',
+        950: '{amber.950}'
       },
       light: {
         surface: {
