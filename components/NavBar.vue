@@ -5,7 +5,7 @@ import Logo from './Logo.vue';</script>
         <div class="flex wfull justify-between p3 md:hidden">
             <Logo />
             <div class="flex items-center gap-3">
-                <Button class=" !text-stone-950 dark:!text-stone-50 hover:!text-purple-500 !border-0" text
+                <Button class=" !text-stone-950 dark:!text-stone-50 hover:!text-purple-400 !border-0" text
                     aria-label="Bell">
                     <Icon name="solar:bell-linear" size="24"></Icon>
                 </Button>
@@ -20,7 +20,7 @@ import Logo from './Logo.vue';</script>
     <div class="  right-0 hidden md:block bg-white dark:bg-stone-950 z-1">
         <div class="flex wfull justify-end p3">
             <div class="flex items-center gap-3">
-                <Button class=" !text-stone-950 dark:!text-stone-50 hover:!text-purple-500 !border-0" text
+                <Button class=" !text-stone-950 dark:!text-stone-50 hover:!text-purple-400 !border-0" text
                     aria-label="Bell">
                     <Icon name="solar:bell-linear" size="32"></Icon>
                 </Button>
