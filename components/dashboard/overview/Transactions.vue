@@ -53,12 +53,12 @@ const invoices = [
 
 <template>
 
-    <Table class="md:text-lg">
+    <Table class="md:text-lg ">
         <TableCaption>A list of your recent payments <NuxtLink to="/transactions" class="underline">see more
             </NuxtLink>
         </TableCaption>
         <TableHeader>
-            <TableRow>
+            <TableRow class="dark:border-stone-900">
                 <TableHead class="w-[100px] md:wmax">
                     ID
                 </TableHead>
@@ -70,7 +70,7 @@ const invoices = [
             </TableRow>
         </TableHeader>
         <TableBody>
-            <TableRow class="!py5" v-for="invoice in invoices" :key="invoice.id">
+            <TableRow class="!py5 dark:border-stone-900" v-for="invoice in invoices" :key="invoice.id">
                 <TableCell class="font-medium text-sm">
                     {{ invoice.id }}
                 </TableCell>

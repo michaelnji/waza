@@ -18,10 +18,10 @@ useHead({
 
 <template>
     <div class="md:max-w-6xl md:mxa !w-full">
-        <div class="hidden md:block">
+        <div class="p-3">
             <Greetings />
         </div>
-        <div class="mt-6 w-full ">
+        <div class="mt-2 w-full ">
             <div class="grid xl:grid-cols-2 gap-y-6 md:gap-x-24 !w-full">
                 <div class="w-full">
                     <WalletDisplay />
@@ -33,7 +33,7 @@ useHead({
                     </div>
                 </div>
                 <div class="md:p0 p-3">
-                    <div class="p-6 border rounded-2xl overflow-x-scrol">
+                    <div class="p-6 border dark:border-stone-900 rounded-2xl overflow-x-scrol">
                         <h1 class="font-medium text-xl mb-6">Recent Payments</h1>
                         <Transactions />
                     </div>

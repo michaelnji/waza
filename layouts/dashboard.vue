@@ -11,7 +11,7 @@ import NavBar from '~/components/NavBar.vue';
             <div class="md:mb-4">
                 <NavBar />
             </div>
-            <div class=" py-12 md:py-0 !overflow-x-hidden wfull">
+            <div class=" py-12 pt-24 md:py-0 !overflow-x-hidden wfull">
                 <slot />
             </div>
 
