@@ -1,5 +1,20 @@
+<script setup lang="ts">
+export interface Props {
+    size?: "sm" | "lg" | "xl"
+
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    size: 'sm',
+})
+let sizeClass = ""
+if (props.size === "sm") sizeClass = "size-4"
+if (props.size === "lg") sizeClass = "size-8"
+if (props.size === "xl") sizeClass = "size-12"
+
+</script>
 <template>
-    <svg class=" fill-current size-8" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+    <svg :class="`fill-current ${sizeClass}`" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496.262 496.262" xml:space="preserve">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

@@ -8,13 +8,13 @@
             <p class="font-medium opacity-50   text-sm">ACCOUNT BALANCE</p>
             <h1 class="font-bold font-display flex  items-center text-5xl ">
                 <span class=" mr-2 text-purple-800  font-body">
-                    <Naira />
-                </span>2345.33
+                    <Naira size="lg" />
+                </span>1210
             </h1>
         </div>
         <div class="flex items-center mt-4 md:mt-0 gap3">
             <Button size="lg"
-                class="px6 py2 shadow-none rounded-full text-stone-950 font-400 text-xl dark:bg-amber-300 dark:hover:bg-amber-400 bg-amber-400 hover:bg-amber-600 active:scale-95 transition ease-in">
+                class="px6 py2 shadow-none rounded-full text-stone-950 font-400 text-xl dark:bg-amber-300 dark:hover:bg-amber-400 bg-amber-400 hover:bg-amber-500 active:scale-95 transition ease-in">
 
                 Add
                 funds

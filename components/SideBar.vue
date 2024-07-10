@@ -13,6 +13,11 @@
             route: '/'
         },
         {
+            label: 'Airtime',
+            icon: 'solar:transfer-vertical-bold',
+            route: '/airtime'
+        },
+        {
             label: 'Subscription',
             icon: 'solar:hashtag-square-linear',
             route: '/subs'
@@ -21,11 +26,6 @@
             label: 'Bills',
             icon: 'solar:notes-linear',
             route: '/bills'
-        },
-        {
-            label: 'Airtime',
-            icon: 'solar:translation-2-bold',
-            route: '/airtime'
         },
 
     ]);

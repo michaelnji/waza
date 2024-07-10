@@ -26,15 +26,19 @@ useHead({
                 <div class="w-full">
                     <WalletDisplay />
                     <div class="lg:mt-12 mt-8 md:p0 p-3">
-                        <h1 class="font-medium text-xl">What do you need?</h1>
-                        <div class="mt-6">
+                        <h1 class="font-normal text-lg">What do you need?</h1>
+                        <div class="mt-4">
                             <Shortcuts />
                         </div>
                     </div>
                 </div>
                 <div class="md:p0 p-3">
-                    <div class="p-6 border dark:border-stone-900 rounded-2xl overflow-x-scrol">
-                        <h1 class="font-medium text-xl mb-6">Recent Payments</h1>
+                    <div class="lg:p-6 p-3 lg:border dark:border-stone-900 rounded-2xl">
+                        <div class="flex mb-6 justify-between items-center">
+                            <h1 class="font-medium text-xl">Recent Activity</h1>
+                            <NuxtLink to="/transactions" class="text-amber-500 font-medium text-base">see more
+                            </NuxtLink>
+                        </div>
                         <Transactions />
                     </div>
                 </div>
