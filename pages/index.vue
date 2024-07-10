@@ -4,7 +4,6 @@ import WalletDisplay from '~/components/dashboard/overview/WalletDisplay.vue';
 import Shortcuts from '~/components/dashboard/overview/Shortcuts.vue';
 import Transactions from '~/components/dashboard/overview/Transactions.vue';
 import Offers from '~/components/dashboard/overview/Offers.vue';
-import Gift from '~/components/dashboard/overview/Gift.vue';
 
 definePageMeta({
     layout: "dashboard"
@@ -33,7 +32,7 @@ useHead({
                         </div>
                     </div>
                     <div class="mt-6 px3">
-                        <Gift />
+                        <Offers />
                     </div>
                 </div>
                 <div class="">
@@ -48,7 +47,7 @@ useHead({
                 </div>
             </div>
             <div class="mt-12">
-                <Offers />
+
             </div>
         </div>
     </div>
