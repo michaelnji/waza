@@ -31,7 +31,7 @@ useHead({
                             <Shortcuts />
                         </div>
                     </div>
-                    <div class="mt-6 px3">
+                    <div class="mt-6 px3 w-[89%] md:w-full">
                         <Offers />
                     </div>
                 </div>
