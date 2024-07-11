@@ -8,7 +8,7 @@
             5000 Naira cash!
         </h2>
         <Button size="lg"
-            class="px6 py2 mt-4 shadow-none rounded-full text-stone-50 font-400 text-xl  bg-stone-900 hover:bg-stone-800 active:scale-95 transition ease-in">
+            class="px6 py2 mt-4 shadow-none rounded-full text-stone-50 font-400 text-xl  bg-stone-900 hover:bg-stone-800 active:scale-95 transition ease-in font-display">
 
             Tell me how
         </Button>

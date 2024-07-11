@@ -51,8 +51,8 @@ const invoices = [
 <template>
 
 
-    <div class="grid gap-3">
-        <div class="p-3 bg-stone-50 dark:bg-stone-900 rounded-2xl  flex items-center justify-between"
+    <div class="grid gap-y-3">
+        <div class="p-3 bg-stone-50 dark:bg-stone-900 rounded-xl  flex items-center justify-between"
             v-for="item in invoices" :key="item.id">
             <div class="flex gap-3 items-center">
                 <div
