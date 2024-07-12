@@ -29,8 +29,8 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
                     'op-100': chosenProvider === 'mtn'
                 }">
 
-                <Icon name="solar:check-circle-bold" size="50" class="  text-amber-500 z-10 md:hidden" />
-                <Icon name="solar:check-circle-bold" size="70" class="  text-amber-500 z-10 hidden md:block" />
+                <Icon name="mingcute:check-2-fill" size="30" class="  text-amber-500 z-10 md:hidden" />
+                <Icon name="mingcute:check-2-fill" size="50" class="  text-amber-500 z-10 hidden md:block" />
             </div>
         </div>
         <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('airtel')">
@@ -41,8 +41,8 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
                     'op-100': chosenProvider === 'airtel'
                 }">
 
-                <Icon name="solar:check-circle-bold" size="50" class="  text-red-500 z-10 md:hidden" />
-                <Icon name="solar:check-circle-bold" size="70" class="  text-red-500 z-10 hidden md:block" />
+                <Icon name="mingcute:check-2-fill" size="30" class="  text-red-500 z-10 md:hidden" />
+                <Icon name="mingcute:check-2-fill" size="50" class="  text-red-500 z-10 hidden md:block" />
             </div>
         </div>
         <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('glo')">
@@ -53,8 +53,8 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
                     'op-100': chosenProvider === 'glo'
                 }">
 
-                <Icon name="solar:check-circle-bold" size="50" class="  text-green z-10 md:hidden" />
-                <Icon name="solar:check-circle-bold" size="70" class="  text-green z-10 hidden md:block" />
+                <Icon name="mingcute:check-2-fill" size="30" class="  text-green z-10 md:hidden" />
+                <Icon name="mingcute:check-2-fill" size="50" class="  text-green z-10 hidden md:block" />
             </div>
         </div>
         <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('9mobile')">
@@ -65,8 +65,8 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
                     'op-100': chosenProvider === '9mobile'
                 }">
 
-                <Icon name="solar:check-circle-bold" size="70" class="  text-green-400 z-10 hidden md:block" />
-                <Icon name="solar:check-circle-bold" size="50" class="  text-green-400 z-10 md:hidden" />
+                <Icon name="mingcute:check-2-fill" size="50" class="  text-green-400 z-10 hidden md:block" />
+                <Icon name="mingcute:check-2-fill" size="30" class="  text-green-400 z-10 md:hidden" />
             </div>
         </div>
     </div>

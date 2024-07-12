@@ -14,7 +14,7 @@
         </div>
         <div class="flex items-center mt-4 md:mt-0 gap3">
             <Button size="lg"
-                class="px6 py2 shadow-none rounded-full text-stone-950 font-400 text-xl dark:bg-amber-300 dark:hover:bg-amber-400 bg-amber-400 hover:bg-amber-500 font-display active:scale-95 transition ease-in">
+                class="px6 py6 shadow-none rounded-full text-stone-950 font-medium text-xl dark:bg-amber-300 dark:hover:bg-amber-400 bg-amber-400 hover:bg-amber-500 font-display active:scale-95 transition ease-in">
                 Fund Wallet
             </Button>
         </div>
