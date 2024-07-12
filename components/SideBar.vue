@@ -66,7 +66,7 @@
         </div>
         <div class=" fixed bottom-0 z-1 right-0 left-0 md:!hidden flex justify-center">
             <div
-                class="  max-w-sm w-full p-3  dark:!bg-stone-900 w-full rounded-t-2xl !bg-white   font-body flex justify-between">
+                class="  max-w-md w-full p-3  dark:!bg-stone-900 w-full rounded-t-2xl !bg-white   font-body flex justify-between">
 
 
 

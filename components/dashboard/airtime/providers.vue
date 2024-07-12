@@ -3,24 +3,71 @@ import MTN from '~/assets/images/logos/mtn.svg'
 import Airtel from '~/assets/images/logos/airtel.svg'
 import Glo from '~/assets/images/logos/glo.svg'
 import Mobile from '~/assets/images/logos/9mobile.svg'
+let chosenProvider = ref('none')
+const emit = defineEmits<{
+    (e: 'choose-provider', provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"): void
+}>()
+function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
+) {
+    if (chosenProvider.value === provider) {
+        chosenProvider.value = 'none'
+        emit("choose-provider", 'none')
+        return
+    }
+    chosenProvider.value = provider
+    emit("choose-provider", provider)
+
+}
 </script>
 <template>
-    <div class="grid grid-cols-4 gap-3 md:max-w-sm max-w-xs">
-        <div class="p-2 border grid gap-y-2 rounded-2xl">
+    <div class="grid grid-cols-4 gap-3 ">
+        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('mtn')">
             <img :src="MTN" alt="MTN Logo" class="w-full rounded-xl">
-            <!-- <h3 class="mt-2 text-base font-display font-medium mxa ">MTN</h3> -->
+            <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
+                :class="{
+                    'op-0': chosenProvider !== 'mtn',
+                    'op-100': chosenProvider === 'mtn'
+                }">
+
+                <Icon name="solar:check-circle-bold" size="50" class="  text-amber-500 z-10 md:hidden" />
+                <Icon name="solar:check-circle-bold" size="70" class="  text-amber-500 z-10 hidden md:block" />
+            </div>
         </div>
-        <div class="p-2 border grid gap-y-2 rounded-2xl">
-            <img :src="Airtel" alt="MTN Logo" class="w-full ">
-            <!-- <h3 class="mt-2 text-base font-display font-medium mxa ">Airtel</h3> -->
+        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('airtel')">
+            <img :src="Airtel" alt="Airtel Logo" class="w-full ">
+            <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
+                :class="{
+                    'op-0': chosenProvider !== 'airtel',
+                    'op-100': chosenProvider === 'airtel'
+                }">
+
+                <Icon name="solar:check-circle-bold" size="50" class="  text-red-500 z-10 md:hidden" />
+                <Icon name="solar:check-circle-bold" size="70" class="  text-red-500 z-10 hidden md:block" />
+            </div>
         </div>
-        <div class="p-2 border grid gap-y-2 rounded-2xl">
-            <img :src="Glo" alt="MTN Logo" class="w-full ">
-            <!-- <h3 class="mt-2 text-base font-display font-medium mxa ">Glo</h3> -->
+        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('glo')">
+            <img :src="Glo" alt="GLO Logo" class="w-full ">
+            <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
+                :class="{
+                    'op-0': chosenProvider !== 'glo',
+                    'op-100': chosenProvider === 'glo'
+                }">
+
+                <Icon name="solar:check-circle-bold" size="50" class="  text-green z-10 md:hidden" />
+                <Icon name="solar:check-circle-bold" size="70" class="  text-green z-10 hidden md:block" />
+            </div>
         </div>
-        <div class="p-2 border grid gap-y-2 rounded-2xl">
-            <img :src="Mobile" alt="MTN Logo" class="w-full ">
-            <!-- <h3 class="mt-2 text-base font-display font-medium mxa ">9Mobile</h3> -->
+        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('9mobile')">
+            <img :src="Mobile" alt="9Mobile Logo" class="w-full ">
+            <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
+                :class="{
+                    'op-0': chosenProvider !== '9mobile',
+                    'op-100': chosenProvider === '9mobile'
+                }">
+
+                <Icon name="solar:check-circle-bold" size="70" class="  text-green-400 z-10 hidden md:block" />
+                <Icon name="solar:check-circle-bold" size="50" class="  text-green-400 z-10 md:hidden" />
+            </div>
         </div>
     </div>
 </template>
