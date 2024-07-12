@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import Greetings from '~/components/dashboard/overview/Greetings.vue';
-import Offers from '~/components/dashboard/overview/Offers.vue';
-import Shortcuts from '~/components/dashboard/overview/Shortcuts.vue';
-import WalletDisplay from '~/components/dashboard/overview/WalletDisplay.vue';
-import Transactions from "~/components/dashboard/Transactions.vue";
 
 definePageMeta({
     layout: "dashboard"
@@ -19,20 +14,20 @@ useHead({
 <template>
     <div class="xl:max-w-5xl max-w-xl md:mxa ">
         <div class="p-5">
-            <Greetings />
+            <DashboardOverviewGreetings />
         </div>
         <div class="mt-2 w-full ">
             <div class="xl:grid xl:grid-cols-2 space-y-6 xl:space-y-0 xl:gap-y-6 md:gap-x-24 !w-full">
                 <div class="w-full">
-                    <WalletDisplay />
+                    <DashboardOverviewWalletDisplay />
                     <div class="lg:mt-12 mt-8 md:p0 px5">
                         <h1 class="font-normal text-lg">What do you need?</h1>
                         <div class="mt-4">
-                            <Shortcuts />
+                            <DashboardOverviewShortcuts />
                         </div>
                     </div>
                     <div class="mt-8 mb-6 px5 md:px0 ">
-                        <Offers />
+                        <DashboardOverviewOffers />
                     </div>
                 </div>
                 <div class="">
@@ -42,7 +37,7 @@ useHead({
                             <NuxtLink to="/transactions" class="text-amber-500 font-medium text-base">see more
                             </NuxtLink>
                         </div>
-                        <Transactions />
+                        <DashboardTransactions />
                     </div>
                 </div>
             </div>

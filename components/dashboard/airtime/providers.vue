@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import MTN from '~/assets/images/logos/mtn.svg'
-import Airtel from '~/assets/images/logos/airtel.svg'
-import Glo from '~/assets/images/logos/glo.svg'
-import Mobile from '~/assets/images/logos/9mobile.svg'
 let chosenProvider = ref('none')
 const emit = defineEmits<{
     (e: 'choose-provider', provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"): void
@@ -21,8 +17,9 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
 </script>
 <template>
     <div class="grid grid-cols-4 gap-3 ">
-        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('mtn')">
-            <img :src="MTN" alt="MTN Logo" class="w-full rounded-xl">
+        <div class=" shadow-xl relative overflow-hidden border-none cursor-pointer bg-purple-50 rounded-xl"
+            @click="chooseProvider('mtn')">
+            <ProviderLogos logo="mtn" />
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
                 :class="{
                     'op-0': chosenProvider !== 'mtn',
@@ -34,7 +31,8 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
             </div>
         </div>
         <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('airtel')">
-            <img :src="Airtel" alt="Airtel Logo" class="w-full ">
+            <ProviderLogos logo="airtel" />
+
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
                 :class="{
                     'op-0': chosenProvider !== 'airtel',
@@ -45,8 +43,9 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
                 <Icon name="mingcute:check-2-fill" size="50" class="  text-red-500 z-10 hidden md:block" />
             </div>
         </div>
-        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('glo')">
-            <img :src="Glo" alt="GLO Logo" class="w-full ">
+        <div class="p-1 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('glo')">
+            <ProviderLogos logo="glo" />
+
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
                 :class="{
                     'op-0': chosenProvider !== 'glo',
@@ -57,8 +56,9 @@ function chooseProvider(provider: "mtn" | "glo" | "airtel" | "9mobile" | "none"
                 <Icon name="mingcute:check-2-fill" size="50" class="  text-green z-10 hidden md:block" />
             </div>
         </div>
-        <div class="p-3 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('9mobile')">
-            <img :src="Mobile" alt="9Mobile Logo" class="w-full ">
+        <div class="p-1 shadow-xl relative cursor-pointer bg-purple-50 rounded-xl" @click="chooseProvider('9mobile')">
+            <ProviderLogos logo="9mobile" />
+
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center"
                 :class="{
                     'op-0': chosenProvider !== '9mobile',
