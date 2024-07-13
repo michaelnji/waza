@@ -2,22 +2,20 @@
 import { Button } from '~/components/ui/button';
 let chosenProvider = ref('none')
 let providerName = computed(() => {
-    if (chosenProvider.value === "none") return "Choose Provider"
-    if (chosenProvider.value === "mtn") return "Buy MTN airtime"
-    if (chosenProvider.value === "glo") return "Buy GLO airtime"
-    if (chosenProvider.value === "airtel") return "Buy Airtel airtime"
-    return "Buy " + chosenProvider.value + " airtime"
+    if (chosenProvider.value === "none") return "Choose bill type"
+    if (chosenProvider.value === "shipping-fee") return " Pay shipping fee"
+    return "Pay " + chosenProvider.value
 })
 </script>
 <template>
     <div>
-        <h1 class=" text-3xl font-medium  font-display"> Buy Airtime</h1>
-        <p class="opacity-70">Get your airtime at the best prices</p>
+        <h1 class=" text-3xl font-medium  font-display"> Pay your bills</h1>
+        <p class="opacity-70">Quick & reliable payments</p>
     </div>
     <div class="mt-6 p-5 bg-purple-700 text-purple-50 rounded-xl">
-        <h1 class=" text-xl font-medium"> Choose a network</h1>
+        <h1 class=" text-xl font-medium"> Choose bill type</h1>
         <div class="mt-4">
-            <DashboardAirtimeProviders @choose-provider="(e) => chosenProvider = e" />
+            <DashboardBillsProviders @choose-provider="(e) => chosenProvider = e" />
         </div>
         <div class="mt-8">
             <Button size="lg" style="word-spacing: 2px;"

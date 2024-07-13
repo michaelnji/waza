@@ -12,12 +12,12 @@ function changeTabs(tab: "airtime" | "internet"
 </script>
 <template>
     <div class="w-full grid grid-cols-2 bg-stone-100 dark:bg-stone-950 p-3 rounded-xl gap-x-3 relative">
-        <div class="flex z-1  cursor-pointer items-center justify-center " @click="changeTabs('airtime')">
+        <button class="flex z-1  cursor-pointer items-center justify-center " @click="changeTabs('airtime')">
             <h2 class="text-xl font-medium">Airtime</h2>
-        </div>
-        <div class="flex z-1  cursor-pointer items-center justify-center " @click="changeTabs('internet')">
+        </button>
+        <button class="flex z-1  cursor-pointer items-center justify-center " @click="changeTabs('internet')">
             <h2 class="text-xl font-medium">Internet</h2>
-        </div>
+        </button>
         <div class="absolute w-1/2  top-2 bottom-2 bg-white dark:bg-stone-900 p-3 rounded-lg transition duration-300 ease-out"
             :class="{
                 'translate-x-2': currentTab === 'airtime',

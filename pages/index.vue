@@ -6,7 +6,7 @@ definePageMeta({
 useHead({
     title: 'Home',
     meta: [
-        { name: 'description', content: 'Your favourite bill vendor' }
+        { name: 'description', content: 'Your favourite bill payments app' }
     ],
 })
 </script>

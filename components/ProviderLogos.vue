@@ -2,18 +2,33 @@
 import MTN from '~/assets/images/logos/mtn.svg'
 import Airtel from '~/assets/images/logos/airtel.svg'
 import Glo from '~/assets/images/logos/glo.svg'
+import Swift from '~/assets/images/logos/swift.jpeg'
+import Smile from '~/assets/images/logos/smile.jpeg'
 import Mobile from '~/assets/images/logos/9mobile.svg'
+import IPNX from '~/assets/images/logos/ipnx.png'
+import type { Providers } from '~/types'
 export interface Props {
-    logo?: "mtn" | "glo" | "airtel" | "9mobile"
+    logo?: Providers
 
 }
 
 const { logo } = defineProps<Props>()
 </script>
 <template>
+    <Icon name="solar:bolt-bold" v-if="logo === 'electricity'" class="hidden md:block" size="70" />
+    <Icon name="solar:bolt-bold" v-if="logo === 'electricity'" size="30" class="md:hidden" />
+    <Icon name="mingcute:ship-fill" v-if="logo === 'shipping-fee'" class="hidden md:block" size="70" />
+    <Icon name="mingcute:ship-fill" v-if="logo === 'shipping-fee'" size="30" class="md:hidden" />
+    <Icon name="solar:bill-check-bold" v-if="logo === 'tax'" class="hidden md:block" size="70" />
+    <Icon name="solar:bill-check-bold" v-if="logo === 'tax'" size="30" class="md:hidden" />
+    <Icon name="solar:card-transfer-bold" v-if="logo === 'pos'" class="hidden md:block" size="70" />
+    <Icon name="solar:card-transfer-bold" v-if="logo === 'pos'" size="30" class="md:hidden" />
+    <img :src="Swift" alt="Swift Logo" v-if="logo === 'swift'">
+    <img :src="Smile" alt="Smile Logo" v-if="logo === 'smile'">
     <img :src="MTN" alt="MTN Logo" v-if="logo === 'mtn'">
     <img :src="Airtel" alt="Airtel Logo" v-if="logo === 'airtel'">
     <img :src="Glo" alt="Glo Logo" v-if="logo === 'glo'">
     <img :src="Mobile" alt="9Mobile Logo" v-if="logo === '9mobile'">
+    <img :src="IPNX" alt="IPnx Logo" v-if="logo === 'ipnx'">
 
 </template>

@@ -64,9 +64,9 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/fonts',
-    // '@hypernym/nuxt-anime',
+    '@hypernym/nuxt-anime',
     '@nuxtjs/color-mode',
-    // '@nuxtjs/device',
+    '@nuxtjs/device',
     // 'nuxt-headlessui',
     'shadcn-nuxt',
     // '@nuxtjs/i18n',
