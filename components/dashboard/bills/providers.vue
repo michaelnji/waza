@@ -23,7 +23,7 @@ function chooseProvider(provider: Providers
             class="p3 shadow-xl relative overflow-hidden border-none grid place-items-center gap-y-1 bg-stone-50 text-amber-600 rounded-xl"
             @click="chooseProvider('electricity')">
             <ProviderLogos logo="electricity" />
-            <span class="text-sm md:text-base text-stone-950 dark:text-stone-50 font-normal">Electricity</span>
+            <span class="text-sm md:text-base text-stone-950 font-normal">Electricity</span>
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center gap-y-1"
                 :class="{
                     'op-0': chosenProvider !== 'electricity',
@@ -38,7 +38,7 @@ function chooseProvider(provider: Providers
             class="p3 shadow-xl relative overflow-hidden border-none grid place-items-center gap-y-1 bg-stone-50 text-purple-600 rounded-xl"
             @click="chooseProvider('pos')">
             <ProviderLogos logo="pos" />
-            <span class="text-sm md:text-base text-stone-950 dark:text-stone-50 font-normal">POS</span>
+            <span class="text-sm md:text-base text-stone-950 font-normal">POS</span>
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center gap-y-1"
                 :class="{
                     'op-0': chosenProvider !== 'pos',
@@ -53,7 +53,7 @@ function chooseProvider(provider: Providers
             class=" p3 shadow-xl relative overflow-hidden border-none grid place-items-center gap-y-1 bg-stone-50 text-green-600 rounded-xl"
             @click="chooseProvider('tax')">
             <ProviderLogos logo="tax" />
-            <span class="text-sm md:text-base text-stone-950 dark:text-stone-50 font-normal">Taxes</span>
+            <span class="text-sm md:text-base text-stone-950 font-normal">Taxes</span>
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center gap-y-1"
                 :class="{
                     'op-0': chosenProvider !== 'tax',
@@ -67,7 +67,7 @@ function chooseProvider(provider: Providers
         <button class="p-3 shadow-xl relative grid place-items-center gap-y-1 bg-stone-50 rounded-xl text-red-500"
             @click="chooseProvider('shipping-fee')">
             <ProviderLogos logo="shipping-fee" />
-            <span class="text-sm md:text-base text-stone-950 dark:text-stone-50 font-normal ">Shipping </span>
+            <span class="text-sm md:text-base text-stone-950 font-normal ">Shipping </span>
 
             <div class="wfull rounded-xl absolute top-0 left-0 right-0 bottom-0 z-1 bg-black bg-op-80 grid transition ease-in place-items-center gap-y-1"
                 :class="{
