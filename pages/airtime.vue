@@ -37,7 +37,7 @@ watch(isSwiping, () => {
                     </div>
 
                     <TransitionGroup
-                        :name="direction === 'right' || currentTab === 'airtime' ? 'slide-left' : 'slide-right'">
+                        :name="direction === 'right' || currentTab === 'airtime' ? 'slide-right' : 'slide-left'">
                         <DashboardAirtimeTab key="airtime" v-if="currentTab === 'airtime'" />
 
                         <DashboardAirtimeInternetTab key="internet" v-if="currentTab === 'internet'" />
@@ -80,8 +80,7 @@ watch(isSwiping, () => {
     transform: translateX(-500px);
 }
 
-/* ensure leaving items are taken out of layout flow so that moving
-   animations can be calculated correctly. */
+
 .slide-right-leave-active {
     position: absolute;
 }
@@ -104,8 +103,7 @@ watch(isSwiping, () => {
     transform: translateX(500px);
 }
 
-/* ensure leaving items are taken out of layout flow so that moving
-   animations can be calculated correctly. */
+
 .slide-left-leave-active {
     position: absolute;
 }
