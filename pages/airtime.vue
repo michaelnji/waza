@@ -13,8 +13,8 @@ let currentTab = ref('airtime')
 const el = ref(null)
 const { isSwiping, direction } = useSwipe(el);
 watch(isSwiping, () => {
-    if (direction.value === "right") currentTab.value = "internet"
-    if (direction.value === "left") currentTab.value = "airtime"
+    if (direction.value === "right") currentTab.value = "airtime"
+    if (direction.value === "left") currentTab.value = "internet"
 })
 </script>
 
@@ -37,7 +37,7 @@ watch(isSwiping, () => {
                     </div>
 
                     <TransitionGroup
-                        :name="direction === 'right' || currentTab === 'internet' ? 'slide-left' : 'slide-right'">
+                        :name="direction === 'right' || currentTab === 'airtime' ? 'slide-left' : 'slide-right'">
                         <DashboardAirtimeTab key="airtime" v-if="currentTab === 'airtime'" />
 
                         <DashboardAirtimeInternetTab key="internet" v-if="currentTab === 'internet'" />
