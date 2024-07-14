@@ -27,6 +27,7 @@
     "@una-ui/nuxt": "^0.4.0-beta.5",
     "@vueuse/core": "^10.11.0",
     "@vueuse/gesture": "^2.0.0",
+    "@vueuse/motion": "^2.2.3",
     "@vueuse/nuxt": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

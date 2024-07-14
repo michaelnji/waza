@@ -8,6 +8,7 @@ useHead({
         { name: 'description', content: 'Airtime' }
     ],
 })
+
 let currentTab = ref('airtime')
 const el = ref(null)
 const { isSwiping, direction } = useSwipe(el);
@@ -22,7 +23,7 @@ watch(isSwiping, () => {
         <div class="px-5 md:px-0">
 
             <div class="xl:grid xl:grid-cols-2  space-y-6 xl:space-y-0 xl:gap-y-6 md:gap-x-24 !w-full ">
-                <div class="w-full ">
+                <div class="w-full overflow-hidden relative">
                     <DashboardAirtimeTabSection @tab-change="(e) => currentTab = e" :tab="currentTab" />
                     <div class="mb-6 mt8">
                         <div v-if="currentTab === 'airtime'">
@@ -35,9 +36,14 @@ watch(isSwiping, () => {
                         </div>
                     </div>
 
-                    <DashboardAirtimeTab v-if="currentTab === 'airtime'" />
+                    <TransitionGroup
+                        :name="direction === 'right' || currentTab === 'internet' ? 'slide-left' : 'slide-right'">
+                        <DashboardAirtimeTab key="airtime" v-if="currentTab === 'airtime'" />
 
-                    <DashboardAirtimeInternetTab v-if="currentTab === 'internet'" />
+                        <DashboardAirtimeInternetTab key="internet" v-if="currentTab === 'internet'" />
+                    </TransitionGroup>
+
+
 
 
                 </div>
@@ -55,3 +61,52 @@ watch(isSwiping, () => {
     </div>
 
 </template>
+<style>
+.list-move,
+/* apply transition to moving elements */
+.slide-right-enter-active,
+.slide-right-leave-active {
+    transition: all 0.5s ease;
+}
+
+
+.slide-right-leave-to {
+    opacity: 0.9;
+    transform: translateX(500px);
+}
+
+.slide-right-enter-from {
+
+    transform: translateX(-500px);
+}
+
+/* ensure leaving items are taken out of layout flow so that moving
+   animations can be calculated correctly. */
+.slide-right-leave-active {
+    position: absolute;
+}
+
+.list-move,
+/* apply transition to moving elements */
+.slide-left-enter-active,
+.slide-left-leave-active {
+    transition: all 0.5s ease;
+}
+
+
+.slide-left-leave-to {
+    opacity: 0.9;
+    transform: translateX(-500px);
+}
+
+.slide-left-enter-from {
+
+    transform: translateX(500px);
+}
+
+/* ensure leaving items are taken out of layout flow so that moving
+   animations can be calculated correctly. */
+.slide-left-leave-active {
+    position: absolute;
+}
+</style>

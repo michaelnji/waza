@@ -69,6 +69,7 @@ export default defineNuxtConfig({
     '@nuxtjs/device',
     "@hebilicious/vue-query-nuxt",
     'nuxt-typed-router',
+    '@vueuse/motion/nuxt',
     // 'nuxt-swiper',
     // 'nuxt-headlessui',
     'shadcn-nuxt',

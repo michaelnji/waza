@@ -22,7 +22,7 @@ function changeTabs(tab: string
         <button class="flex z-1  cursor-pointer items-center justify-center " @click="changeTabs('internet')">
             <h2 class="text-xl font-medium">Internet</h2>
         </button>
-        <div class="absolute w-1/2  top-2 bottom-2 bg-white dark:bg-stone-900 p-3 rounded-lg transition duration-300 ease-out"
+        <div class="absolute w-1/2  top-2 bottom-2 bg-white dark:bg-stone-900 p-3 rounded-lg transition duration-500 ease-out"
             :class="{
     'translate-x-2': tab === 'airtime',
     'c': tab === 'internet'
