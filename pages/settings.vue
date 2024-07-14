@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Slider from '~/components/Slider.vue';
 definePageMeta({
     layout: "dashboard"
 })
@@ -11,6 +12,6 @@ useHead({
 </script>
 
 <template>
-
+    <Slider />
 
 </template>

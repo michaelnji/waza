@@ -11,6 +11,7 @@
     "add:comp": "bunx shadcn-vue@latest add"
   },
   "dependencies": {
+    "@hebilicious/vue-query-nuxt": "^0.3.0",
     "@hypernym/nuxt-anime": "^2.1.1",
     "@nuxt/fonts": "^0.7.1",
     "@nuxt/icon": "^1.0.0",
@@ -22,8 +23,10 @@
     "@pinia/nuxt": "^0.5.1",
     "@primevue/themes": "^4.0.0",
     "@radix-icons/vue": "^1.0.0",
+    "@tanstack/vue-query": "^5.51.1",
     "@una-ui/nuxt": "^0.4.0-beta.5",
     "@vueuse/core": "^10.11.0",
+    "@vueuse/gesture": "^2.0.0",
     "@vueuse/nuxt": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -33,6 +36,8 @@
     "mathjs": "^13.0.2",
     "nuxt": "^3.12.3",
     "nuxt-headlessui": "^1.2.0",
+    "nuxt-swiper": "^1.2.2",
+    "nuxt-typed-router": "^3.6.5",
     "primevue": "^4.0.0",
     "radix-vue": "^1.9.0",
     "tailwind-merge": "^2.4.0",

@@ -9,11 +9,8 @@ let providerName = computed(() => {
 })
 </script>
 <template>
-    <div>
-        <h1 class=" text-3xl font-medium  font-display"> Buy Internet</h1>
-        <p class="opacity-70">Get more megabytes for less</p>
-    </div>
-    <div class="mt-6 p-5 bg-purple-700 text-purple-50 rounded-xl">
+
+    <div class="p-5 bg-purple-700 text-purple-50 rounded-xl">
         <h1 class=" text-xl font-medium"> Choose a provider</h1>
         <div class="mt-4">
             <DashboardAirtimeDataProviders @choose-provider="(e) => chosenProvider = e" />

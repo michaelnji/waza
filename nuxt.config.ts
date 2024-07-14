@@ -67,6 +67,9 @@ export default defineNuxtConfig({
     '@hypernym/nuxt-anime',
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
+    "@hebilicious/vue-query-nuxt",
+    'nuxt-typed-router',
+    // 'nuxt-swiper',
     // 'nuxt-headlessui',
     'shadcn-nuxt',
     // '@nuxtjs/i18n',
@@ -107,5 +110,6 @@ export default defineNuxtConfig({
     classPrefix: '',
     classSuffix: ''
 
-  }
+  },
+
 })
