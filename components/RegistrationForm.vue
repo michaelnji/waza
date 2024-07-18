@@ -48,7 +48,7 @@ const onSubmit = handleSubmit((values) => {
                 <FormMessage />
             </FormItem>
         </FormField>
-        <FormField v-slot="{ componentField }" name="Password">
+        <FormField v-slot="{ componentField }" name="password">
             <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
