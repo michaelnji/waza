@@ -135,5 +135,4 @@
 
 .slide-left-leave-active {
   position: absolute;
-  z-index: -900 !important;
 }

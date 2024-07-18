@@ -11,9 +11,9 @@ if (!authType) router.push("/user-auth?type=login")
 const currentAuthType = ref(authType)
 </script>
 <template>
-    <div class="w-full md:h-screen">
+    <div class="w-full h-screen">
         <div
-            class="w-full p3 xl:p0 h-full bg-stone-50 md:bg-stone-100 dark:bg-stone-950 grid xl:grid-cols-2 place-items-center xl:place-items-initial  xl:gap-12">
+            class="w-full p3 xl:p0 h-full bg-stone-50 md:bg-stone-100 dark:bg-stone-950 grid xl:grid-cols-2 md:place-items-center xl:place-items-initial  xl:gap-12">
             <div class="hidden xl:block">
                 <div class=" bg-p max-h-full  grid place-items-center w-full hfull  border-dashed">
                     <div>
@@ -71,7 +71,7 @@ const currentAuthType = ref(authType)
 
                 </div>
             </div>
-            <div class="w-full h-screen grid place-items-center xl:bg-stone-50 dark:xl:bg-stone-900 ">
+            <div class="w-full  grid md:place-items-center xl:bg-stone-50 dark:xl:bg-stone-900 ">
                 <div
                     class=" dark:text-stone-50 rounded-2xl xl:rounded-none dark:md:border xl:border-none dark:md:bg-stone-900 xl:bg-transparent dark:md:border-stone-800 p6 md:p-8 md:bg-stone-50 xl:p0 w-full !max-w-sm md:!max-wmd  !overflow-hidden">
                     <div class="mb-6">
