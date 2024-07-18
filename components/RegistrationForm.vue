@@ -13,11 +13,7 @@ import {
 } from '~/components/ui/form'
 import { Input } from '~/components/ui/input'
 import { registrationSchema } from '~/utils/form/schema'
-type AuthType = "registration" | "login"
 
-const emit = defineEmits<{
-    (e: 'auth-type-change', authType: AuthType): void
-}>()
 const formSchema = toTypedSchema(z.object(registrationSchema).required())
 
 const { handleSubmit } = useForm({
@@ -35,7 +31,7 @@ const onSubmit = handleSubmit((values) => {
             <FormItem>
                 <FormLabel>Username</FormLabel>
                 <FormControl>
-                    <Input type="text" placeholder="Username" v-bind="componentField" class="px6 py6 rounded-full" />
+                    <Input type="text" placeholder="Jon Doe" v-bind="componentField" class="px6 py6 rounded-full" />
                 </FormControl>
                 <FormDescription>This will your public display name</FormDescription>
                 <FormMessage />
@@ -45,7 +41,8 @@ const onSubmit = handleSubmit((values) => {
             <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                    <Input type="text" placeholder="email" v-bind="componentField" class="px6 py6 rounded-full" />
+                    <Input type="text" placeholder="user@email.co" v-bind="componentField"
+                        class="px6 py6 rounded-full" />
                 </FormControl>
 
                 <FormMessage />
@@ -72,12 +69,14 @@ const onSubmit = handleSubmit((values) => {
                 class="px6 py6 wfull shadow-none rounded-full text-stone-950 font-medium text-xl dark:bg-amber-300 dark:hover:bg-amber-400 bg-amber-400 hover:bg-amber-500 font-display active:scale-95 transition ease-in">
                 Create Account
             </Button>
-            <p class="opacity-75">
-                Have an account? <Button :link="true" @click="emit('auth-type-change', 'login')"
-                    class="!bg-transparent !p0 text-current shadow-none text-purple-600 hover:underline underline-purple ">Login
-                    to account
+            <p class="opacity-75 flex items-center gap-x-1">
+                Have an account? <NuxtLink to="/login"
+                    class="!bg-transparent !p0 text-current shadow-none text-purple-600 flex items-center dark:text-purple-300 dark:underline-purple hover:underline underline-purple ">
+                    Login
+
                     <Icon name="solar:arrow-right-line-duotone" class="ml-1" />
-                </Button> </p>
+                </NuxtLink>
+            </p>
         </div>
     </form>
 </template>

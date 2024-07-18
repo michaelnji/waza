@@ -13,11 +13,6 @@ import {
 } from '~/components/ui/form'
 import { Input } from '~/components/ui/input'
 import { loginSchema } from '~/utils/form/schema'
-type AuthType = "registration" | "login"
-
-const emit = defineEmits<{
-    (e: 'auth-type-change', authType: AuthType): void
-}>()
 const formSchema = toTypedSchema(z.object(loginSchema).required())
 
 const { handleSubmit } = useForm({
@@ -35,7 +30,8 @@ const onSubmit = handleSubmit((values) => {
             <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                    <Input type="text" placeholder="email" v-bind="componentField" class="px6 py6 rounded-full" />
+                    <Input type="text" placeholder="user@email.co" v-bind="componentField"
+                        class="px6 py6 rounded-full" />
                 </FormControl>
 
                 <FormMessage />
@@ -57,12 +53,14 @@ const onSubmit = handleSubmit((values) => {
                 class="px6 py6 wfull shadow-none rounded-full text-stone-950 font-medium text-xl dark:bg-amber-300 dark:hover:bg-amber-400 bg-amber-400 hover:bg-amber-500 font-display active:scale-95 transition ease-in">
                 Login to account
             </Button>
-            <p class="opacity-75">
-                Don't have an account? <Button :link="true" @click="emit('auth-type-change', 'registration')"
-                    class="!bg-transparent !p0 text-current shadow-none text-purple-600 hover:underline underline-purple ">Sign
+            <p class="opacity-75 flex items-center gap1">
+                Don't have an account? <NuxtLink to="/registration"
+                    class="!bg-transparent !p0 text-current shadow-none text-purple-600 flex items-center dark:text-purple-300 dark:underline-purple hover:underline underline-purple ">
+                    Sign
                     up
                     <Icon name="solar:arrow-right-line-duotone" class="ml-1" />
-                </Button> </p>
+                </NuxtLink>
+            </p>
         </div>
     </form>
 </template>

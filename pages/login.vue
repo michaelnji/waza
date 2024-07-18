@@ -3,12 +3,6 @@
 definePageMeta({
     layout: 'default'
 })
-const route = useRoute()
-const authType = route.query.type
-const router = useRouter()
-if (!authType) router.push("/user-auth?type=login")
-
-const currentAuthType = ref(authType)
 </script>
 <template>
     <div class="w-full h-screen">
@@ -19,8 +13,8 @@ const currentAuthType = ref(authType)
                     <div>
                         <Swiper :modules="[SwiperAutoplay, SwiperEffectCards]" class="max-w-md" :effect="'cards'"
                             :autoplay="{
-                                delay: 4000,
-                                disableOnInteraction: true,
+                                delay: 3000,
+
 
                             }" :loop="true">
                             <SwiperSlide key="one" class="rounded-3xl">
@@ -77,26 +71,16 @@ const currentAuthType = ref(authType)
                     <div class="mb-6">
                         <Logo />
                     </div>
-                    <div v-if="currentAuthType === 'login'">
+                    <div>
                         <h2 class="font-display font-medium text-3xl md:text-4xl ">Welcome Back</h2>
                         <p class="md:text-lg opacity-80">Let's log you in</p>
                     </div>
-                    <div v-if="currentAuthType === 'registration'">
-                        <h2 class="font-display font-medium text-3xl md:text-4xl ">Create Account</h2>
-                        <p class="md:text-lg opacity-80">Let's get you up to speed</p>
-                    </div>
+
                     <div class="mt-8">
 
-                        <LoginForm v-if="currentAuthType === 'login'" @auth-type-change="(e) => {
-                            currentAuthType = e
-                            router.replace('/user-auth?type=registration')
-                        }" key="login-form" />
+                        <LoginForm />
 
-                        <RegistrationForm v-if="currentAuthType === 'registration'" key="registration-form"
-                            @auth-type-change="(e) => {
-                                currentAuthType = e
-                                router.replace('/user-auth?type=login')
-                            }" />
+
 
                     </div>
 
