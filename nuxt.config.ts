@@ -62,15 +62,26 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
+  runtimeConfig: {
+    flwPublicKey: '',
+    flwSecretKey: '',
+    flwEncryptionKey: '',
+    supabaseUrl: '',
+    supabaseKey: ''
+
+
+  },
   modules: [
     '@nuxt/fonts',
     '@hypernym/nuxt-anime',
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
     "@hebilicious/vue-query-nuxt",
+    '@nuxtjs/supabase',
     'nuxt-typed-router',
     '@vueuse/motion/nuxt',
-    // 'nuxt-swiper',
+    'nuxt-swiper',
+    'magic-regexp/nuxt',
     // 'nuxt-headlessui',
     'shadcn-nuxt',
     // '@nuxtjs/i18n',
@@ -82,8 +93,10 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     '@primevue/nuxt-module',
     "@nuxt/icon",
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+
   ],
+
   primevue: {
     options: {
       theme: {
@@ -112,5 +125,15 @@ export default defineNuxtConfig({
     classSuffix: ''
 
   },
+  supabase: {
+    redirect: false,
+    cookieOptions: {
+      maxAge: 60 * 60 * 8,
+      sameSite: 'lax',
+      secure: true
+    },
+    types: "./server/types/db/database.types.ts"
 
+
+  },
 })

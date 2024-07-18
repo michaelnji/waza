@@ -1,7 +1,6 @@
 <script setup lang="ts">
-export interface Props {
+interface Props {
     size?: "sm" | "lg" | "xl"
-
 }
 
 const props = withDefaults(defineProps<Props>(), {

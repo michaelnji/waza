@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import MTN from '~/assets/images/logos/mtn.svg'
-import Airtel from '~/assets/images/logos/airtel.svg'
-import Glo from '~/assets/images/logos/glo.svg'
-import Swift from '~/assets/images/logos/swift.jpeg'
-import Smile from '~/assets/images/logos/smile.jpeg'
 import Mobile from '~/assets/images/logos/9mobile.svg'
-import IPNX from '~/assets/images/logos/ipnx.png'
+import Airtel from '~/assets/images/logos/airtel.svg'
 import DSTV from '~/assets/images/logos/dstv.svg'
+import Glo from '~/assets/images/logos/glo.svg'
 import GOTV from '~/assets/images/logos/gotv.svg'
+import IPNX from '~/assets/images/logos/ipnx.png'
+import MTN from '~/assets/images/logos/mtn.svg'
+import Smile from '~/assets/images/logos/smile.jpeg'
 import Spectranet from '~/assets/images/logos/spectranet.svg'
 import Startimes from '~/assets/images/logos/startimes.svg'
+import Swift from '~/assets/images/logos/swift.jpeg'
 import type { Providers } from '~/types'
 export interface Props {
     logo?: Providers

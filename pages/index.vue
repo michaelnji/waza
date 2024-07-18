@@ -9,6 +9,15 @@ useHead({
         { name: 'description', content: 'Your favourite bill payments app' }
     ],
 })
+async function getData() {
+    const data = await useFetch('/api/bills/airtime')
+    return data.data.value
+}
+const { data, isSuccess } = useQuery({
+    queryKey: ['data'],
+    queryFn: getData,
+})
+if (isSuccess) console.log(data.value)
 </script>
 
 <template>
