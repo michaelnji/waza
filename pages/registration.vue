@@ -66,7 +66,8 @@ definePageMeta({
 
                 </div>
             </div>
-            <div class="w-full  grid sm:place-items-center xl:bg-stone-50 dark:xl:bg-stone-900 ">
+            <div
+                class="w-full  grid sm:place-items-center xl:bg-stone-50 dark:xl:bg-stone-900 transition-all duration-300 ease-in">
                 <div
                     class=" dark:text-stone-50 rounded-2xl xl:rounded-none dark:sm:border xl:border-none dark:sm:bg-stone-900 xl:bg-transparent dark:sm:border-stone-800 p6 sm:p-8 sm:bg-stone-50 xl:p0 w-full max-wmd  !overflow-hidden">
                     <div class="mb-6">
